@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: gold;
+        }
+
+        div {
+            width: 260px;
+            height: 300px;
+            background-color: #363636;
+            color: azure;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: -14px 14px 25px #24f504;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        output {
+            color: cyan;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 align="center"> <u>Interest Calculator</u></h2>
+        <p>
+            <label>Principal Amount</label><br>
+            <input type="text" id="pamt" /><span>&#8377</span>
+        </p>
+
+        <p>
+            <label>Rate of interest</label><br>
+            <input type="text" id="roi" /><span>%</span>
+        </p>
+
+        <p>
+            <label>Time</label><br>
+            <input type="text" id="time"><span>Year(s)<span>
+        </p>
+
+        <p align="center"><button onclick="compute()">Get extra </button></p>
+        <p><output id="amount"></output></p>
+
+    </div>
+    <script>
+        function compute() {
+            let p, t, r, si;   //local variable
+            p = pamt.value;
+            t = time.value;
+            r = roi.value;
+            si = p * t * r / 100
+            amount.value = "Interest Amount Rs " + si;
+        }
+    </script>
+</body>
+
+</html>

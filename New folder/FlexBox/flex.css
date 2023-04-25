@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+   display: flex; 
+   background-color: grey;
+
+   /* Always is on the main axis */
+   justify-content:flex-start;
+
+   /* Always on the cross axis */
+   align-items:center;
+}
+
+.item{
+width: 100px;
+height: 100px;
+background: #254de4;
+margin: 10px;
+color: rgb(194, 231, 231);
+display: flex;
+justify-content: center;
+justify-items: left;
+
+
+}
+
+
+.item:nth-of-type(1) {}
+
+.item:nth-of-type(2) {}
+
+.item:nth-of-type(3) {}
+
+/* options available justify-content [baseline, center, end, firstbaseline, flex-end, flex-start,  ] */

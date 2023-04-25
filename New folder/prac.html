@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1px">
+        <tr>
+            <th>SL No</th>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>Store</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Shaan</td>
+            <td>Babyshop</td>
+            <td>Tabuk</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Mirza</td>
+            <td>Basic</td>
+            <td>Tabuk1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Salma</td>
+            <td>Basic</td>
+            <td>CP Tabuk</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="2px">
+        <thead>
+            <th>SL No</th>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>Store</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shaan</td>
+                <td>Babyshop</td>
+                <td rowspan="2">Tabuk</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Mirza</td>
+                <td rowspan="2">Basic</td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Salma</td>
+                
+                <td>CP Tabuk</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>4</td>
+                <td>Mansoor</td>
+                <td colspan="2" align="center">Clothing</td>
+                
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+
+    ==================================================
+
+    <table border="2px">
+        <thead>
+            <tr>
+                <dl>SL No</dl>
+                <dl>Name</dl>
+                <dl>Dept</dl>
+                <dl>Store</dl>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <dd>1</dd>
+                    <dd>Shaan</dd>
+                    <dd>Babyshop</dd>
+                    <dd>Tabuk</dd>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <dd>2</dd>
+                    <dd>Mirza</dd>
+                    <dd>Babyshop</dd>
+                    <dd>Tabuk</dd>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <dd>3</dd>
+                    <dd>Salma</dd>
+                    <dd>Babyshop</dd>
+                    <dd>Tabuk</dd>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    =====================================
+
+    <dd>
+    <dt>HTML</dt>
+    <dd>It is hyperlink</dd>
+    <dt>CSS</dt>
+    <dd>It is cascading style sheet</dd>
+
+    </dd>
+<h2>Registration form</h2>
+    <form >
+        <fieldset style="width: 250px;">
+            <legend style="color: brown; font-size: 30px;">Form Registration</legend>
+        <dl style="border: 3px;">
+            <dt>User ID</dt>
+            <dd><input type="text"></dd>
+            <dt>User Name</dt>
+            <dd><input type="text"></dd>
+            <dt>User Email</dt>
+            <dd><input type="email"></dd>
+            <dt>Password</dt>
+            <dd><input type="password"></dd>
+            <dt>Age</dt>
+            <dd><input type="number"></dd>
+            <dt>Mobile</dt>
+            <dd><input type="Number"></dd>
+        </dl>
+        <button>Register</button>
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+
+</html>

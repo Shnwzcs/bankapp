@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Run rate management</h1>
+    <script>
+        // let runs = [6, 8, 10, 7, 12, 7, 9, 10, 3] //using literal
+        let runs = new Array(6, 8, 10, 7, 12, 7, 9, 10, 3) // nrew way
+        let total = 0;
+        for (let i = 0; i <= runs.length - 1; i++) {
+            document.write(`Over ${i + 1} => ${runs[i]}<br>`)
+            total = total + runs[i]
+        }
+        document.write(`Total Runs ${total}<br>`)
+        document.write(`Over ${runs.length}<br>`)
+        document.write(`RR : ${total / runs.length}<br>`) // to find run rate 
+        
+    </script>
+</body>
+
+</html>

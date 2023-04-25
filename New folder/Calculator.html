@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HEADING</h1>
+    <label>Enter first number</label><br>
+    <input type="text" id="inp1" /><br><br>
+    <label>Enter second number</label><br>
+    <input type="text" id="inp2" /><br>
+    <button onclick="addition()">Addition</button><br>
+    <output id="op"></output>
+    <script>
+        function addition() {
+            let x, y, res
+            x = parseFloat(inp1.value)
+            y = parseFloat(inp2.value)
+            res = x + y
+            // document.write(res);
+            // console.log(res);
+            // alert(`sum is` + res)
+            op.value= `sum is ` + res
+        }
+
+    </script>
+
+</body>
+
+</html>

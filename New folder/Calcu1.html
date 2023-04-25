@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>Calci providing the result on instantly on the same screen</h3>
+    <form oninput="addition()">
+        <input type="text" id="firstNum" value=0 />&nbsp;&nbsp;&nbsp;
+        <input type="text" id="secNum" value=0 />
+    </form>
+    <output id="result"></output>
+    <script>
+        function addition() {
+            let x, y, res
+            x = parseFloat(firstNum.value)
+            y = parseFloat(secNum.value)
+            res = x + y
+            result.value = `sum is ` + res
+        }
+    </script>
+</body>
+
+</html>
